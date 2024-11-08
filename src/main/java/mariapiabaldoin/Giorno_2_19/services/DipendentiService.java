@@ -98,8 +98,8 @@ public class DipendentiService {
         return this.dipendentiRepository.save(found);
     }
 
-    public void findByIdAndDelete(UUID userId) {
-        Dipendente found = this.findById(userId);
+    public void findByIdAndDelete(UUID dipendenteId) {
+        Dipendente found = this.findById(dipendenteId);
         this.dipendentiRepository.delete(found);
     }
 
